@@ -4,6 +4,10 @@ public class Address {
     private String Addressline1;
     private String Addressline2;
 
+    public Address() {
+
+    }
+
     @Override
     public String toString() {
         return "Address{" +

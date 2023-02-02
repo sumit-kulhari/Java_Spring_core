@@ -22,4 +22,15 @@
         <constructor-arg  value="Hyatt nagar"/>
         <constructor-arg  value="Pune"/>
     </bean>
+    <bean id="employee3" class="com.bhavana.beans.Employee">
+        <property name="eid" value="102"></property>
+        <property name="name" value="Ron"></property>
+        <property name="salary" value="200"></property>
+        <constructor-arg>
+            <bean class="com.bhavana.beans.Address">
+                <property name="addressline1" value="viman nagar"></property>
+                <property name="addressline2" value="Pune"></property>
+            </bean>
+        </constructor-arg>
+    </bean>
 </beans>
