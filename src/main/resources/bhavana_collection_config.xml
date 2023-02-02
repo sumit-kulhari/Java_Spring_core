@@ -2,15 +2,19 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
-<bean id="employee" class="com.bhavana.beans.EmployeeCollection">
-    <property name="eid" value="101"></property>
-    <property name="name" value="Ram"></property>
-    <property name="salary" value="100"></property>
-</bean>
-    <bean id="employee1" class="com.bhavana.beans.EmployeeCollection">
+<!--<bean id="employee" class="com.bhavana.beans.EmployeeCollection" autowire="byType">-->
+<!--    <property name="eid" value="101"></property>-->
+<!--    <property name="name" value="Ram"></property>-->
+<!--    <property name="salary" value="100"></property>-->
+<!--</bean>-->
+    <bean id="employee1" class="com.bhavana.beans.EmployeeCollection" autowire="byName">
         <property name="eid" value="102"></property>
         <property name="name" value="Ron"></property>
         <property name="salary" value="200"></property>
+    </bean>
+    <bean id="address" class="com.bhavana.beans.Address" scope="singleton">
+        <constructor-arg  value="Hyatt nagar"/>
+        <constructor-arg  value="Pune"/>
     </bean>
   <bean id="empObject" class="com.bhavana.beans.EmployeeCollection">
       <property name="eid" value="103"></property>
