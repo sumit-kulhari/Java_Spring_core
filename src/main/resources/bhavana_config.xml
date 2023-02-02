@@ -18,7 +18,7 @@
         <constructor-arg value="3000"/>
         <constructor-arg name="address" ref="address"/>
     </bean>
-    <bean id="address" class="com.bhavana.beans.Address">
+    <bean id="address" class="com.bhavana.beans.Address" init-method="init" destroy-method="destroy" scope="singleton">
         <constructor-arg  value="Hyatt nagar"/>
         <constructor-arg  value="Pune"/>
     </bean>

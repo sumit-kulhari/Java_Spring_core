@@ -12,6 +12,15 @@ public class Address {
                 '}';
     }
 
+//    Bean lifecycle methods
+//    Bean initialization method
+    public void init(){
+        System.out.println("Bean is going through init.");
+    }
+//    Bean destroy method
+    public void destroy() {
+        System.out.println("Bean will destroy now.");
+    }
     public String getAddressline1() {
         return Addressline1;
     }
