@@ -6,9 +6,7 @@ public class EmployeeCollection {
     private int eid;
     private String name;
     private int salary;
-
     private List<String> Language;
-
     public List<String> getLanguage() {
         return Language;
     }
@@ -36,7 +34,6 @@ public class EmployeeCollection {
         this.salary = salary;
         this.Language = Language;
     }
-    
 
     public int getEid() {
         return eid;
